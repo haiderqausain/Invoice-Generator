@@ -13,7 +13,12 @@
 
 </head>
 <body>
-<form class="w-50 mx-auto mt-5 mb-5">
+  <body>
+  <!-- Print Button -->
+  <div class="text-end p-3 no-print">
+    <button class="btn btn-dark d-print-none" onclick="window.print()">🖨️ Print Invoice</button>
+  </div>
+<form class="w-50 mx-auto mt-5 mb-5 d-print-none">
   <div class="form-group">
     <label for="formGroupExampleInput">Product Serial Number</label>
     <input type="number" class="form-control" id="ids" placeholder="Enter Product Number">
