@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<input id="ids" placeholder="ID">
+<input id="Product" placeholder="Product">
+<input id="Price" placeholder="Price" type="number">
+<input id="Qty" placeholder="Quantity" type="number">
+<input id="Amnt" placeholder="Amount" readonly>
+<button onclick="calculate()">Calculate</button>
+<button onclick="addData()">Add</button>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th><th>Product</th><th>Price</th><th>Quantity</th><th>Amount</th>
+    </tr>
+  </thead>
+  <tbody id="newtr"></tbody>
+</table>
+
+<p>Subtotal: ₹<span id="subtotal-amount">0.00</span></p>
+<p>Tax: ₹<span id="tax-amount">50</span></p>
+<p>Total: ₹<span id="total-amount">0.00</span></p>
+, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

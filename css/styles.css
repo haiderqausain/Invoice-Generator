@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(153, 129, 99);
+  background-size: cover;
+  backgroundd-repeat: no-repeat;
+  font-family: "Intel One Mono", monospace;
+}
+
+label, td, th {
+  color: beige;
+}
+
+#tablehead {
+  background-color: rgb(6, 112, 206);
+  color: black;
+}/*# sourceMappingURL=styles.css.map */

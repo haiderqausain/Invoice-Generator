@@ -1,0 +1,39 @@
+<select id="country">
+  <option value="India">India</option>
+  <option value="USA">USA</option>
+</select>
+
+<select id="city">
+  <!-- Cities will be populated based on country -->
+</select>
+
+<script>
+  const countryCityMap = {
+    India: ["Delhi", "Mumbai", "Bangalore"],
+    USA: [
+  "New York", "Los Angeles", "Chicago", "Houston", "Phoenix",
+  "Philadelphia", "San Antonio", "San Diego", "Dallas", "San Jose",
+  "Austin", "Jacksonville", "Fort Worth", "Columbus", "Charlotte",
+  "San Francisco", "Indianapolis", "Seattle", "Denver", "Washington"
+]
+  };
+
+  const countrySelect = document.getElementById("country");
+  const citySelect = document.getElementById("city");
+
+  countrySelect.addEventListener("change", () => {
+    const selectedCountry = countrySelect.value;
+    const cities = countryCityMap[selectedCountry] || [];
+
+    // Clear existing cities
+    citySelect.innerHTML = "";
+
+    // Add new city options
+    cities.forEach(city => {
+      const option = document.createElement("option");
+      option.value = city;
+      option.textContent = city;
+      citySelect.appendChild(option);
+    });
+  });
+</script>
